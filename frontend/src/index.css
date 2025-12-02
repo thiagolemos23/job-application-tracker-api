@@ -1,0 +1,181 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.app-header p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.app-header button {
+  align-self: flex-start;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #f9fafb;
+}
+
+.app-header button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.app-error {
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background-color: #7f1d1d;
+  color: #fee2e2;
+  font-size: 0.9rem;
+}
+
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: #020617;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.app-table thead {
+  background-color: #111827;
+}
+
+.app-table th,
+.app-table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #1f2937;
+  text-align: left;
+}
+
+.app-table tbody tr:nth-child(even) {
+  background-color: #020617;
+}
+
+.app-table tbody tr:nth-child(odd) {
+  background-color: #020617;
+}
+
+.app-table tbody tr:hover {
+  background-color: #111827;
+}
+
+.app-form-section {
+  margin-bottom: 2rem;
+  background-color: #020617;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+}
+
+.app-form-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.app-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #020617;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.form-actions button {
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #22c55e;
+  color: #022c22;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.table-select {
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid #374151;
+  background-color: #020617;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+}
+
+.table-select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
